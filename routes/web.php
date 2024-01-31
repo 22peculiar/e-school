@@ -47,3 +47,4 @@ Route::middleware(['auth','role:teacher'])->group(function(){
    });  //End Group Teacher Middleware
    
 
+Route::get('admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
